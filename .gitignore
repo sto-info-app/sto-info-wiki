@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Archive files
+*.zip
+*.tar
+*.gz
+
+# Logs
+*.log
+
+# Markdown tooling
+.marp/
+.obsidian/
+

@@ -1,13 +1,4 @@
-# STO Info Wiki
-
-This repository exists solely to host the central GitHub Wiki for STO Info.
-
-The wiki acts as a navigation and onboarding layer across the STO Info ecosystem. Canonical technical documentation remains inside each repository's `/docs` directory.
-
-To find out more about STO Info, check out the [About us](https://startrekonline.info/about) page on the main website.
-
-
-## Wiki Pages Included
+## STO Info
 
 - [Home](home.md)
 - [Architecture Overview](architecture-overview.md)
