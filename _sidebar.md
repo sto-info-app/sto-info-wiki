@@ -4,6 +4,7 @@
 - [Architecture Overview](architecture-overview.md)
 - [Repository Index](repository-index.md)
 - [Behind the Scenes](behind-the-scenes.md)
+- [Custom Tracking](custom-tracking.md)
 - [Roadmap](roadmap.md)
 - [Ideas and Concepts](ideas-and-concepts.md)
 - [Community and Socials](community-and-socials.md)
