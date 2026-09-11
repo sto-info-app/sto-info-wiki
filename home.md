@@ -32,6 +32,7 @@ For a system-level overview, see [Architecture Overview](architecture-overview.m
 - [Repository Index](repository-index.md)
 - [Behind the Scenes](behind-the-scenes.md)
 - [Custom Tracking](custom-tracking.md)
+- [Writing and Markdown](writing-and-markdown.md)
 - [Roadmap](roadmap.md)
 - [Ideas and Concepts](ideas-and-concepts.md)
 - [Community and Socials](community-and-socials.md)

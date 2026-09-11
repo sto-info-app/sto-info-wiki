@@ -21,9 +21,12 @@ Sections contain tabs, tabs contain fields, and a field holds one value per STO
 account or character. Definitions are built once per scope; values are recorded
 per record.
 
-Everything is managed from Settings. Account and character detail pages display
-what has been recorded and offer no editing controls at all, so there is one
-place to change something and one place only.
+Definitions are built in Settings and nowhere else — what to record, in what
+order and who may see it are decisions about every record at once.
+
+Values can be filled in from Settings, where you pick the record first, or from
+an account or captain page itself, where "Edit tracked data" opens the same
+editor on the record you are already looking at.
 
 ---
 
