@@ -10,5 +10,6 @@
 - [Ideas and Concepts](ideas-and-concepts.md)
 - [Community and Socials](community-and-socials.md)
 - [Security and Governance Principles](security-and-governance-principles.md)
+- [Security Advisory Responses](security-advisory-responses.md)
 - [Versioning and Release Flow](versioning-and-release-flow.md)
 - [Wiki Governance](wiki-governance.md)

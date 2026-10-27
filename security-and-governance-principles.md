@@ -41,6 +41,17 @@ Automation is preferred over manual process wherever possible.
 
 ---
 
+## Runtime and Dependency Hygiene
+
+- Runtime versions are pinned in each repository and raised promptly when a security release lands
+- Dependencies are kept on current minor and patch releases, with `npm audit` clean at every severity
+- Transitive overrides are kept minimal, documented, and removed once upstream catches up
+- Major upgrades are taken deliberately and verified with a full build and test run, including those raised by Dependabot
+
+Responses to external advisories that span repositories are recorded in [Security Advisory Responses](security-advisory-responses.md).
+
+---
+
 ## Data Governance and Retention
 
 Where user-related data is processed:
