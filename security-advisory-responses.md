@@ -4,6 +4,28 @@ This page records how STO Info responded to external security advisories that af
 
 ---
 
+## November 2026: Node.js 24.22.3 security release
+
+### What happened
+
+- **Node.js security release**: Node.js 24.22.3, released on 10 November 2026, fixes nine high-severity TLS and HTTP/2 vulnerabilities, among them a remotely reachable TLS server crash and TLS resumption or renegotiation changing the server name (SNI), plus several medium and low ones.
+- **deepmerge advisory withdrawn**: GitHub withdrew [GHSA-gcqx-w48m-w2h4](https://github.com/advisories/GHSA-gcqx-w48m-w2h4) on 16 November 2026. It was the one low-severity advisory left in development tooling after the glob and minimatch response below.
+
+---
+
+### What changed
+
+| Area | Change |
+| --- | --- |
+| Node.js runtime | Every Node.js repository moved from 24.22.1 to **Node.js 24.22.3** for development, CI and Render, pinned in `.nvmrc`. The file scan worker's image moved to the matching `node:24.22.3-bookworm-slim` base. |
+| Pipelines | The backend, frontend and file scan worker took the latest CodeQL, SonarQube scan, dependency review, OpenSSF Scorecard and cache actions, still pinned by commit. |
+| Dependencies | All four Node.js repositories took their latest minor and patch releases. Every override was re-tested by removing it and is still needed. |
+| Audit state | `npm audit` reports no advisories at any severity in any repository, production or development. |
+
+The catalogue extractor has no runtime dependencies and uses floating action tags, so it needed no change.
+
+---
+
 ## November 2026: glob and minimatch advisories
 
 ### What happened
@@ -23,7 +45,7 @@ Both were published on 30 October 2026 and fixed only in the newest major versio
 | Production exposure | `glob` was in the production dependencies of the backend (through the mailer module) and the Shortcut bot (through TypeORM). Everything else was development tooling. |
 | Overrides removed | Five older overrides were no longer needed and were removed: `multer` (backend and bot), `compression` and `vite` (frontend), and `argparse` (frontend and worker), whose advisory was withdrawn. |
 | Dependencies | All four Node.js repositories took their latest minor and patch releases, and the pipelines took the latest CodeQL, SonarQube scan and release actions. |
-| Remaining advisory | `npm audit` reports one low-severity advisory in development tooling only: `deepmerge` ([GHSA-gcqx-w48m-w2h4](https://github.com/advisories/GHSA-gcqx-w48m-w2h4)), which has no fixed release. Production dependencies are clean at every severity. |
+| Remaining advisory | `npm audit` reported one low-severity advisory in development tooling only: `deepmerge` ([GHSA-gcqx-w48m-w2h4](https://github.com/advisories/GHSA-gcqx-w48m-w2h4)), which has no fixed release. It was withdrawn on 16 November 2026. Production dependencies were clean at every severity. |
 
 The catalogue extractor has no runtime dependencies and its development tools were already current.
 
